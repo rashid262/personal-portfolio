@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="progressBar"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="scrollToSection('about')">About</button></li>
+                <li><button onclick="scrollToSection('experience')">Experience</button></li>
+                <li><button onclick="scrollToSection('projects')">Projects</button></li>
+                <li><button onclick="scrollToSection('education')">Education</button></li>
+                <li><button onclick="scrollToSection('skills')">Skills</button></li>
+                <li><button onclick="scrollToSection('contact')">Contact</button></li>
+            </ul>
+        </nav>
+        <div id="themeToggle" class="toggle-container">
+            <div class="toggle-circle"></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <div class="card" id="about">
+            <div class="about-content">
+                <div class="profile-photo">
+                    <img src="/myphoto.jpg" alt="Mohammad Rashid Ansari">
+                </div>
+                <div class="about-text">
+                    <h1>Mohammad Rashid Ansari</h1>
+                    <p>Enthusiastic and detail-oriented backend developer with a strong foundation in programming, databases, and web
+                        servers. Dedicated to building robust and scalable backend systems to support dynamic development teams.</p>
+                </div>
+            </div>
+            <div class="about-buttons">
+                <a href="https://www.linkedin.com/in/rashid-ansari26/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 16px;">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/rashid262" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 16px;">
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="card" id="experience">
+            <h2>Work Experience</h2> <hr><br>
+            <p><strong> <li>KODNEST TECHNOLOGIES | Oct. 2024 - April 2025 </li></strong></p>
+            <p><i><strong>Full Stack Java Developer Intern</strong></i></p><br>
+           <li> Developed backend logic using Core Java and implemented data structures with Collections Framework.</li>
+           <li> Built interactive UIs with React.js & JavaScript, integrating APIs for dynamic content.</li>
+           <li> Managed databases using MySQL/MongoDB, optimizing queries and ensuring smooth operations.</li>
+           <li> Collaborated in Agile teams, using Git/GitHub for version control and deploying applications on Cloud.</l>
+           <li> Guided fellow interns during times of need.</p>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="card" id="projects">
+            <h2>Projects</h2>
+            <hr><br>   
+            <ol>
+                <li>
+                    <strong>LearnSphere - Full-Stack Online Learning Platform <a href="https://github.com/rashid262/learn-sphere">🔗link</a></strong>
+                    <p><i><u>Spring Boot, MySQL, Eclipse Thymeleaf, Razorpay API, HTML, CSS, JavaScript | Feb 2025</u></i></p>
+                    <ul style="list-style-type: circle;">
+                        <li>Designed and developed an e-learning platform enabling 100+ students to browse, enroll, and access courses.</li>
+                        <li>Trainers can manage course creation and lesson planning.</li>
+                        <li>Implemented role-based authentication to maintain secure access for students and trainers.</li>
+                        <li>Achieved 99.9% uptime during testing and optimized database queries, reducing load times by 40%.</li>
+                    </ul>
+                </li><br><hr>
+        
+                <li>
+                    <strong>Meal Mate - Online Food Ordering System <a href="https://github.com/rashid262/meal-mate">🔗link</a></strong>
+                    <p><i><u>Django, Python, SQLite, VS Code, Razorpay API, HTML, CSS, JavaScript | Dec 202</u></i></p>
+                    <ul style="list-style-type: circle;">
+                        <li>Developed and deployed Meal Mate, a Django-based web app serving over 100 users.</li>
+                        <li>Implemented secure, role-based authentication for restaurant owners and customers.</li>
+                        <li>Integrated Razorpay payment gateway, reducing checkout time by 40%.</li>
+                    </ul>
+                </li><br><hr>
+        
+                <li>
+                    <strong>Quiz App - Web-Based Quiz Platform <a href="https://github.com/rashid262/Quiz-App">🔗link</a></strong>
+                    <p><i><u>HTML, CSS, JavaScript, VS Code | Nov 2024</u></i></p>
+                    <ul style="list-style-type: square;">
+                        <li>Built an interactive quiz app with real-time scoring and immediate feedback.</li>
+                        <li>Responsive UI supporting smooth navigation across multiple devices.</li>
+                        <li>Optimized DOM manipulation and result calculation.</li>
+                    </ul>
+                </li><br><hr>
+        
+                <li>
+                    <strong>Bank Management System - Java Console Application <a href="https://github.com/rashid262/bank-management-system">🔗link</a></strong>
+                    <p><i><u>Java, OOPs, VS Code | Dec 2024</u></i></p>
+                    <ul style="list-style-type: square;">
+                        <li>Developed console-based banking app using OOP principles.</li>
+                        <li>Includes account creation, deposits, withdrawals, transfers, and transaction history.</li>
+                        <li>Used encapsulation and modular design for better maintainability.</li>
+                    </ul>
+                </li><br><hr>
+        
+                <li>
+                    <strong>🍔 Food App <a href="https://rashid262.github.io/Food-App/">🔗link</a></strong>
+                    <p><i><u>HTML, CSS, JavaScript | Nov 2024</u></i></p>
+                    <ul style="list-style-type: disc;">
+                        <li>Responsive food ordering website with smooth navigation and interactive UI.</li>
+                        <li>Optimized for mobile with visually appealing design.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        
+        <!-- Education Section -->
+        <div class="card" id="education">
+            <h2>Education</h2><hr><br>
+            <ul>
+                <li><strong>Degree:</strong> Bachelor of Technology in Computer Science & Engineering<br><strong>Year:</strong> 2024<br><strong>CGPA:</strong>8.39</li> <br>
+                <li><strong>Intermediate</strong> Mathematics Physics Chemistry & Computer Science<br><strong>Year:</strong> 2019<br><strong>Percentage:</strong> 84%</li><br>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card" id="skills">
+            <h2>Skills</h2>
+            <hr><br>
+            <div class="skills-bar">
+                <label>Java</label>
+                <span class="bar-container" style="--fill: 80%;">
+                    <span class="percentage">80%</span>
+                </span>
+            </div>
+            <div class="skills-bar">
+                <label>Python</label>
+                <span class="bar-container" style="--fill: 75%;">
+                    <span class="percentage">75%</span>
+                </span>
+            </div>
+            <div class="skills-bar">
+                <label>HTML5,CSS3 </label>
+                <span class="bar-container" style="--fill: 80%;">
+                    <span class="percentage">80%</span>
+                </span>
+            </div>
+            <div class="skills-bar">
+                <label>JavaScript</label>
+                <span class="bar-container" style="--fill: 60%;">
+                    <span class="percentage">60%</span>
+                </span>
+            </div>
+            <div class="skills-bar">
+                <label>ReactJS</label>
+                <span class="bar-container" style="--fill: 50%;">
+                    <span class="percentage">50%</span>
+                </span>
+            </div>
+            <div class="skills-bar">
+                <label>SQL</label>
+                <span class="bar-container" style="--fill: 85%;">
+                    <span class="percentage">85%</span>
+                </span>
+            </div>
+            <div class="skills-bar">
+                <label>MongoDB</label>
+                <span class="bar-container" style="--fill: 50%;">
+                    <span class="percentage">50%</span>
+                </span>
+            </div>
+
+            <div class="skills-bar">
+                <label>Hibernate</label>
+                <span class="bar-container" style="--fill: 60%;">
+                    <span class="percentage">60%</span>
+                </span>
+            </div>
+
+            <div class="skills-bar">
+                <label>Spring Boot</label>
+                <span class="bar-container" style="--fill: 60%;">
+                    <span class="percentage">60%</span>
+                </span>
+            </div>
+            </div>           
+            
+        </div>
+        
+        
+        <!-- Contact Section -->
+        <div class="card" id="contact">
+            <h2>Contact</h2><hr><br>
+            <p>Email: <a href="mailto:rashidansari.an697@gmail.com">rashidansari.an697@gmail.com</a></p>
+            <p>Phone: +91 7525884368</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MOhammad Rashid Ansari. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
